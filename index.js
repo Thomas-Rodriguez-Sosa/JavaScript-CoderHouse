@@ -1,7 +1,7 @@
 // Calculadora de promedios escolares
 
 const nombreAlumno = prompt("Ingrese su nombre y apellido: ")
-const promedioMinimo = 6.00;
+const promedioMinimo = parseFloat(prompt("Ingrese el promedio con el que aprueba en su institucion: "))
 let resultado1Trimestre, resultado2Trimestre, resultado3Trimestre
 let promedio1, promedio2, promedio3
 
