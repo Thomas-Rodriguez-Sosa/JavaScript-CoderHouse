@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="favicon">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="favicon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
-    <title>Calculadora de Promedios</title>
+    <title>Document</title>
 </head>
 <body>
     <div class="container">
             <nav id="nav-fondo">
-                <img src="/imgs/logo.png" class="logo" alt="">
-                <h1 class="titulo">Xtulator</h1>
+                <a href="/index.html"><img src="/imgs/logo.png" class="logo" alt=""></a>
+                <a href="/index.html"><h1 class="titulo">Xtulator</h1></a>
                 <ul>
                     <li><a href="#">Calculadoras</a></li>
                     <li><a href="#">Ayuda</a></li>
@@ -24,13 +24,12 @@
             </nav>
 
             <div class="contenido">
-                <h2>¡Empecemos a calcular tus promedios¡</h2>
-                <h3>¿Como puedes empezar?<br>Es simple, presione el boton "calcular".</h3>
-                <div class="botones">
-                <a href="/pages/calcular.html"><button class="btn-calcular">Calcular</button></a>
-                </div>
-
-
+                <form>
+                    <input id="input-1" type="number" placeholder="Ingrese su primera nota">
+                    <input id="input-2" type="number" placeholder="Ingrese su segunda nota">
+                    <input id="input-3" type="number" placeholder="Ingrese su tercera nota">
+                    <button id="submit" type="submit" class="btn-calcular">Calcular Promedio</button>
+                </form>
                 <!-- <form>
                     <input type="text" placeholder="Ingrese su nombre y apellido">
                     <input type="number" placeholder="Ingrese su edad">
@@ -39,8 +38,16 @@
                     <button class="btn">Calcular</button>
                 </form> -->
             </div>
-        <!-- </div> Footer en construccion :) -->
-        <!-- <div class="footer-grid">
+            <section id="listaAlumnosR">
+                <button class="btn" id="botonLista">Mostrar estudiantes recientes</button>
+                <ul id="listaRegis" class="listaAlumnos">
+                    <h3>Lista de alumnos recientemente registrados</h3>
+                </ul>
+            </section>
+
+
+            <!-- </div> Footer en construccion :)--> 
+            <!-- <div class="footer-grid">
             <footer>
                 <h1>Footer</h1>
             </footer>
@@ -49,6 +56,7 @@
     </div>
 
 
-    <script type="module" src="/JS/index.js"></script>
+    <!-- <script src="/JS/index.js"></script> -->
+    <script type="module" src="/JS/calcular.js" ></script>
 </body>
 </html>
