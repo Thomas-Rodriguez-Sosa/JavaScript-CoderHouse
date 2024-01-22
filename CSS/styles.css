@@ -14,7 +14,7 @@ html, input, button {
     grid-template-columns: 0.6fr 0.9fr 1fr;
     grid-template-rows: 0.5fr 1.5fr 1fr 0.5fr;
     gap: 0px 10px;
-    grid-template-areas:
+    grid-template-aeas:
       "head head head"
       "menu main main"
       "menu main main"

@@ -11,7 +11,7 @@ class Alumno {
 const alumno1 = new Alumno("Thomas Rodriguez", 18, "Argentino", 44971946, 8)
 const alumno2 = new Alumno("Lisandro Correa", 17, "Argentino", 45594408, 9,5) 
 const alumno3 = new Alumno("Tomas Galvan", 18, "Argentino", 44985832, 4)
-// Array de Alumnos registrados //
+// Array de Alumnos registrados ///
 const listaAlumnos = [alumno1, alumno2, alumno3]
 const submitCalc = document.querySelector("#submit")
 const input1 = document.querySelector("#input-1")
