@@ -9,6 +9,14 @@ const listaRegis = document.querySelector("#listaRegis")
 const listaAlumnosR = document.querySelector("#listaAlumnosR ul")
 const botonLista = document.querySelector("#botonLista")
 const tablaResul = document.querySelector("#tablaResul")
+document.querySelector("#buttonRegis").addEventListener("click", function(){
+    document.querySelector(".popup-Form").classList.add("active")
+    document.querySelector(".footerIcon").classList.add("invisibleIcon")
+});
+document.querySelector(".popup-Form .btn-cerrar").addEventListener("click", function(){
+    document.querySelector(".popup-Form").classList.remove("active")
+    document.querySelector(".footerIcon").classList.remove("invisibleIcon")
+});
 let listaAlumnos;
 let resultadoInput = 0;
 

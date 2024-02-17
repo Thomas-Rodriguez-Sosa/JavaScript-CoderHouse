@@ -7,3 +7,12 @@ const alumnos = [
 // Este Array guardado en Local Storage tiene su uso en calcular.js //
 localStorage.setItem("alumnos", JSON.stringify(alumnos))
 
+document.querySelector("#buttonRegis").addEventListener("click", function(){
+    document.querySelector(".popup-Form").classList.add("active")
+    document.querySelector(".footerIcon").classList.add("invisibleIcon")
+});
+document.querySelector(".popup-Form .btn-cerrar").addEventListener("click", function(){
+    document.querySelector(".popup-Form").classList.remove("active")
+    document.querySelector(".footerIcon").classList.remove("invisibleIcon")
+});
+    
