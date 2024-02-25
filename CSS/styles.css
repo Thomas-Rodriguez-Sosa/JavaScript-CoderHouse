@@ -93,6 +93,7 @@ html, input, button {
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    margin: 0px 4px;
     border: 0;
     outline: 0;
     border-radius: 5px;
@@ -100,6 +101,11 @@ html, input, button {
     background: fuchsia;
     font-weight: 500;
     cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: red;
+    transition: 0.6;
   }
 
   .btn img {
@@ -122,6 +128,30 @@ html, input, button {
     margin: 5px 5px 5px 0px ;
   }
   
+  .btn-calcular:hover {
+    background-color: red;
+    transition: 0.3;
+  }
+
+  .btn-Borrar {
+    display: inline-block;
+    align-items: center;
+    padding: 2px 5px;
+    margin: 3px 2px;
+    background-color: fuchsia;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    font-weight: 400;
+    border-radius: 40%;
+  }
+
+  .btn-Borrar:hover {
+    background-color: red;
+    transition: 0.3;
+  }
+
   .botones {
     display: flex;
   }
@@ -206,24 +236,34 @@ html, input, button {
     cursor: pointer;
   }
 
+  .contenido .popup-Form .btn-cerrar:hover {
+    background-color: red;
+    transition: 0.3;
+  }
+
   .contenido .popup-Form h2 {
     text-align: center;
     color: #222;
-    margin: 10px 0px 20px;
+    margin-bottom: 5px;
     font-size: 25px;
   }
 
   .contenido .popup-Form .divPopUp {
-    margin: 20px 20px;
+    margin: 10px 20px;
+    max-height: 80px;
+    transition: max-height 0.5s;
+    overflow: hidden;
   }
 
+  
   .contenido .popup-Form .divPopUp label {
     font-size: 14px;
     color: #222;
   }
 
   .contenido .popup-Form .divPopUp input[type="text"],
-  .contenido .popup-Form .divPopUp input[type="password"] {
+  .contenido .popup-Form .divPopUp input[type="password"],
+  .contenido .popup-Form .divPopUp input[type="email"] {
     margin-top: 5px;
     display: block;
     width: 100%;

@@ -13,7 +13,7 @@
     <title>Calculadora || Xtulator</title>
 </head>
 <body>
-    <div class="container">
+        <div class="container">
             <nav id="nav-fondo">
                 <a href="../index.html"><img src="../imgs/logo.png" class="logo" alt=""></a>
                 <a href="../index.html"><h1 class="titulo">Xtulator</h1></a>
@@ -25,34 +25,39 @@
                 <div>
                     <button id="buttonRegis" class="btn"><img src="../imgs/iconor.png">Registrarse</button>
                     </div>
-                    <div class="contenido">
-                        <div class="popup-Form">
-                            <div class="btn-cerrar">&times;</div>
-                            <h2>Registrarse</h2>
-                            <div class="divPopUp">
-                                <label for="name">Nombre</label>
-                                <input type="text" id="nombre-Regis" placeholder="Ingrese su nombre">
+                    <form>
+                        <div class="contenido">
+                                <div class="popup-Form">
+                                    <div class="btn-cerrar">X</div>
+                                    <h2 id="formTitle">Registrarse</h2>
+                                    <div class="divPopUp" id="nameInput">
+                                        <label for="name">Nombre</label>
+                                        <input type="text" id="nombre-Regis" placeholder="Ingrese su nombre">
+                                    </div>
+                                    <div class="divPopUp">
+                                        <label for="email">Correo Electronico</label>
+                                        <input type="email" id="email-Regis" placeholder="Ingrese su correo electronico">
+                                    </div>
+                                    <div class="divPopUp">
+                                        <label for="password">Contraseña</label>
+                                        <input type="password" id="contraseña-Regis" placeholder="Ingrese su contraseña">
+                                    </div>
+                                    <div class="divPopUp">
+                                        <input type="checkbox" id="recuerdame">
+                                        <label for="recuerdame">Recuerdame</label>
+                                    </div>
+                                    <div class="divPopUp">
+                                        <button type="button" id="signUpBtn">Registrarse</button>
+                                    </div>
+                                    <div class="divPopUp">
+                                        <a href="#">¿Olvido su contraseña?</a>
+                                    </div>
+                                    <div class="divPopUp">
+                                        <a id="signInBtn" href="#">Iniciar Sesion</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="divPopUp">
-                                <label for="last-Name">Apellido</label>
-                                <input type="text" id="apellido-Regis" placeholder="Ingrese su apellido">
-                            </div>
-                            <div class="divPopUp">
-                                <label for="password">Contraseña</label>
-                                <input type="password" id="contraseña-Regis" placeholder="Ingrese su contraseña">
-                            </div>
-                            <div class="divPopUp">
-                                <input type="checkbox" id="recuerdame">
-                                <label for="recuerdame">Recuerdame</label>
-                            </div>
-                            <div class="divPopUp">
-                                <button>Registrarse</button>
-                            </div>
-                            <div class="divPopUp">
-                                <a href="#">¿Olvido su contraseña?</a>
-                            </div>
-                        </div>
-                    </div>
+                        </form>
             </nav>
 
             <div class="contenido">
@@ -75,9 +80,12 @@
             
             </div>
             <section id="listaAlumnosR">
+                <div class="botones">
                 <button class="btn" id="botonLista">Mostrar estudiantes recientes</button>
+                <button class="btn" id="botonBorrar">Borrar estudiantes recientes</button>
+                </div>
                 <ul id="listaRegis" class="listaAlumnos">
-                    
+
                 </ul>
             </section>
             

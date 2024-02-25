@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link href="mailcheck.p.rapidapi.com">
     <title>Xtulator</title>
 </head>
 <body>
@@ -28,34 +29,39 @@
                 <div>
                 <button id="buttonRegis" class="btn"><img src="./imgs/iconor.png">Registrarse</button>
                 </div>
-                <div class="contenido">
-                    <div class="popup-Form">
-                        <div class="btn-cerrar">&times;</div>
-                        <h2>Registrarse</h2>
-                        <div class="divPopUp">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="nombre-Regis" placeholder="Ingrese su nombre">
+                <form>
+                    <div class="contenido">
+                            <div class="popup-Form">
+                                <div class="btn-cerrar">X</div>
+                                <h2 id="formTitle">Registrarse</h2>
+                                <div class="divPopUp" id="nameInput">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" id="nombre-Regis" placeholder="Ingrese su nombre">
+                                </div>
+                                <div class="divPopUp">
+                                    <label for="email">Correo Electronico</label>
+                                    <input type="email" id="email-Regis" placeholder="Ingrese su correo electronico">
+                                </div>
+                                <div class="divPopUp">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" id="contraseña-Regis" placeholder="Ingrese su contraseña">
+                                </div>
+                                <div class="divPopUp">
+                                    <input type="checkbox" id="recuerdame">
+                                    <label for="recuerdame">Recuerdame</label>
+                                </div>
+                                <div class="divPopUp">
+                                    <button type="button" id="signUpBtn">Registrarse</button>
+                                </div>
+                                <div class="divPopUp">
+                                    <a href="#">¿Olvido su contraseña?</a>
+                                </div>
+                                <div class="divPopUp">
+                                    <a id="signInBtn" href="#">Iniciar Sesion</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="divPopUp">
-                            <label for="last-Name">Apellido</label>
-                            <input type="text" id="apellido-Regis" placeholder="Ingrese su apellido">
-                        </div>
-                        <div class="divPopUp">
-                            <label for="password">Contraseña</label>
-                            <input type="password" id="contraseña-Regis" placeholder="Ingrese su contraseña">
-                        </div>
-                        <div class="divPopUp">
-                            <input type="checkbox" id="recuerdame">
-                            <label for="recuerdame">Recuerdame</label>
-                        </div>
-                        <div class="divPopUp">
-                            <button>Registrarse</button>
-                        </div>
-                        <div class="divPopUp">
-                            <a href="#">¿Olvido su contraseña?</a>
-                        </div>
-                    </div>
-                </div>
+                    </form>
             </nav>
 
             <div class="contenido">
